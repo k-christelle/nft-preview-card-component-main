@@ -15,7 +15,7 @@ body{
 }
 
 .container{
-    height: 70%;
+    height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -24,6 +24,7 @@ body{
 }
 /* .card{
     background: hsl(217, 54%, 11%);
+    
     height: 90%;
     width: 25%;
     border: 5px;
@@ -34,14 +35,13 @@ body{
 
 .card{
     background: hsl(216, 50%, 16%) ;
-    height: 100%;
-    width: 22%;
+    height: 37rem;
+    width: 20rem;
     border-radius: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* box-shadow: 0 10px 30px black,
-              0 10px 20px black; */
+    box-shadow: 1px 5px 20px hsla(0, 0%, 0%, 0.433);
     
 }
 
@@ -62,6 +62,21 @@ body{
     border-radius: 5%;
 }
 
+.hoverContainer{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.hoverContainer:hover{
+    background: hsla(178, 100%, 50%, 0.437);
+    border-radius: 5%;
+    opacity: 1;
+    cursor: pointer;
+}
+
 .texteContainer{
     height: 55%;
     width: 100%;
@@ -70,6 +85,12 @@ body{
 .texte1{
     color: hsl(0, 0%, 100%) ;
     font-size: 18px;
+}
+
+.texte1:hover{
+
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
 
 .texte2{
@@ -98,30 +119,44 @@ body{
 
 
 
-span{
+span {
     flex-direction: row;
     display: flex;
     align-items: center;
+    gap: 0.4rem;
     justify-content: space-between;
     margin: 0 5px 5px 0;
 }
+
+
 
 hr{
     background: hsl(215, 32%, 27%);
 }
 
 .foot{
-    flex-direction: row;
     display: flex;
-    /* align-items: center;
-    justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    gap: 1rem;
 
+}
+
+.texte{
+    display: flex;
+    gap: .5rem;
+    color: hsl(215, 51%, 70%);
+}
+
+.texte span{
+    color: hsl(0, 0%, 100%);
+}
+
+.texte span:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
 
 #imag1{
     border: 1px solid hsl(0, 0%, 100%);
     border-radius: 50%;
 }
-
-
-
